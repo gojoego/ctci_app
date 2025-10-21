@@ -1,33 +1,82 @@
-# Compiled class file
-*.class
+# ------------------------------------------------------------------------------
+# Node / TypeScript / Next.js Monorepo (Frontend + Backend)
+# ------------------------------------------------------------------------------
 
-# Log file
+# --- Node.js / General ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Build outputs ---
+dist/
+.next/
+out/
+.cache/
+.vite/
+build/
+coverage/
+
+# --- TypeScript ---
+*.tsbuildinfo
+
+# --- Logs ---
+logs
 *.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# BlueJ files
-*.ctxt
+# --- OS files ---
+.DS_Store
+Thumbs.db
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# --- Editor / IDE configs ---
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# --- Temporary files ---
+tmp/
+temp/
+*.tmp
 
-# virtual machine crash logs
-hs_err_pid*
-replay_pid*
+# --- Drizzle / Database ---
+drizzle/
+*.db
+*.sqlite
+*.sql-journal
 
-# Maven build output
-target/
-
-# --- React / Vite frontend ---
+# --- Frontend specific ---
 frontend/node_modules/
 frontend/dist/
 frontend/.vite/
 frontend/.env*
+
+# --- Backend specific ---
+backend/node_modules/
+backend/dist/
+backend/.env*
+
+# --- Test / Coverage ---
+coverage/
+jest-report/
+*.lcov
+
+# --- Misc ---
+*.bak
+*.orig
+*.rej
+*.seed
+*.pid
+*.pid.lock
