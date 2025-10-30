@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS problem_sets (
     book_id VARCHAR(50),
     title VARCHAR(50),  
     category problem_category, 
-    prompt VARCHAR(50), 
+    prompt TEXT, 
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
