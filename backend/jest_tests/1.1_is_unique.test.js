@@ -27,9 +27,6 @@ const run_shared_tests = function (implementations, cases) {
   }
 };
 
-
-
-
 describe('is unique - core implementations', () => {
     const implementations = {
         'boolean set': is_unique_set,
