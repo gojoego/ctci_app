@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS problem_sets (
-    id SERIAL,   
+    problem_set_id SERIAL,   
     book_id VARCHAR(50),
     title VARCHAR(50),  
     category problem_category, 
